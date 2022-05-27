@@ -10,7 +10,8 @@ def parsePrice(STOCK_NAME):
     #print("r", r.text)
     soup = BeautifulSoup(r.text, 'html.parser') #use beautiful soup to parse the html; lxml
     #print("soup:", soup.title.text)
-    
+    price = soup.find'div'
+  {'class':'(ntraday__data'}), find_all("bg-quote")
     return price
 
 price = parsePrice("cost").replace(",", '')
